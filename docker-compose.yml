@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: ./docker/web
+      args:
+        - DOCROOT=/var/www/html/public
+    volumes:
+      - ./docker/web/php.ini:/usr/local/etc/php/php.ini
+      - ./docker/web/docroot:/var/www/html
+    ports:
+      - 8080:80

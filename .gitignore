@@ -1,0 +1,6 @@
+app/**
+!app/.gitkeep
+docker/web/docroot/public/**
+!docker/web/docroot/public/.gitkeep
+.vscode
+node_modules
